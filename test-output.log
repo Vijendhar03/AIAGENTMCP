@@ -1,0 +1,90 @@
+
+Running 2 tests using 2 workers
+
+[1/2] [chromium] › tests/final-inspection.spec.ts:153:7 › Rahul Shetty Academy - E-Commerce Complete Flow › Quick Verification: Login and see products
+[2/2] [chromium] › tests/final-inspection.spec.ts:9:7 › Rahul Shetty Academy - E-Commerce Complete Flow › Complete End-to-End: Login -> Add iPhone X to Cart -> Checkout -> Success
+[chromium] › tests/final-inspection.spec.ts:153:7 › Rahul Shetty Academy - E-Commerce Complete Flow › Quick Verification: Login and see products
+📍 Quick Verification Test: Login and Products Page
+
+[chromium] › tests/final-inspection.spec.ts:9:7 › Rahul Shetty Academy - E-Commerce Complete Flow › Complete End-to-End: Login -> Add iPhone X to Cart -> Checkout -> Success
+📍 STEP 1: Navigate to login page
+
+✓ Login page loaded
+
+📍 STEP 2: Fill login credentials
+
+✓ Username entered
+
+✓ Password entered
+
+📍 STEP 3: Select Admin role
+
+✓ Admin role selected
+
+📍 STEP 4: Select Student user type
+
+✓ Student selected
+
+📍 STEP 5: Accept terms and conditions
+
+✓ Terms accepted
+
+📍 STEP 6: Click Sign In button
+
+✓ Login successful - Products page loaded
+
+📍 STEP 7: Find iPhone X product
+
+  1) [chromium] › tests/final-inspection.spec.ts:153:7 › Rahul Shetty Academy - E-Commerce Complete Flow › Quick Verification: Login and see products 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      167 |     const productCount = await products.count();
+      168 |     
+    > 169 |     expect(productCount).toBeGreaterThan(0);
+          |                          ^
+      170 |     console.log(`✓ Found ${productCount} products on the page`);
+      171 |     
+      172 |     // Verify iPhone X is visible
+        at /home/vijendhar/automation/AIAGENTMCP/tests/final-inspection.spec.ts:169:26
+
+    Error Context: test-results/final-inspection-Rahul-She-a617b-tion-Login-and-see-products-chromium/error-context.md
+
+
+✓ iPhone X product found
+
+📍 STEP 8: Add iPhone X to cart
+
+✓ iPhone X added to cart
+
+📍 STEP 9: Open navigation menu
+
+  2) [chromium] › tests/final-inspection.spec.ts:9:7 › Rahul Shetty Academy - E-Commerce Complete Flow › Complete End-to-End: Login -> Add iPhone X to Cart -> Checkout -> Success 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Toggle navigation' })
+
+
+      71 |     // ========== STEP 9: OPEN NAVIGATION MENU ==========
+      72 |     console.log('📍 STEP 9: Open navigation menu');
+    > 73 |     await page.getByRole('button', { name: 'Toggle navigation' }).click();
+         |                                                                   ^
+      74 |     console.log('✓ Navigation menu opened');
+      75 |     
+      76 |     // ========== STEP 10: CLICK CHECKOUT ==========
+        at /home/vijendhar/automation/AIAGENTMCP/tests/final-inspection.spec.ts:73:67
+
+    Error Context: test-results/final-inspection-Rahul-She-42cc3-o-Cart---Checkout---Success-chromium/error-context.md
+
+
+  2 failed
+    [chromium] › tests/final-inspection.spec.ts:9:7 › Rahul Shetty Academy - E-Commerce Complete Flow › Complete End-to-End: Login -> Add iPhone X to Cart -> Checkout -> Success 
+    [chromium] › tests/final-inspection.spec.ts:153:7 › Rahul Shetty Academy - E-Commerce Complete Flow › Quick Verification: Login and see products 
+
+[36m  Serving HTML report at http://localhost:39613. Press Ctrl+C to quit.[39m

@@ -1,0 +1,57 @@
+0 verbose cli /usr/bin/node /usr/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@10.8.2
+2 info using node@v18.20.8
+3 silly config load:file:/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/home/vijendhar/automation/AIAGENTMCP/.npmrc
+5 silly config load:file:/home/vijendhar/.npmrc
+6 silly config load:file:/usr/etc/npmrc
+7 verbose title npm exec @playwright/mcp@latest --cdp-endpoint http://127.0.0.1:9222 --host 127.0.0.1 --port 9330 --output-mode stdout
+8 verbose argv "exec" "--yes" "--" "@playwright/mcp@latest" "--cdp-endpoint" "http://127.0.0.1:9222" "--host" "127.0.0.1" "--port" "9330" "--output-mode" "stdout"
+9 verbose logfile logs-max:10 dir:/home/vijendhar/automation/AIAGENTMCP/.cache/npm/_logs/2026-07-03T07_43_28_710Z-
+10 verbose logfile /home/vijendhar/automation/AIAGENTMCP/.cache/npm/_logs/2026-07-03T07_43_28_710Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 http fetch GET 200 https://registry.npmjs.org/npm 313ms
+14 http fetch GET 200 https://registry.npmjs.org/@playwright%2fmcp 284ms (cache miss)
+15 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+16 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+17 silly idealTree buildDeps
+18 silly fetch manifest @playwright/mcp@0.0.77
+19 silly packumentCache full:https://registry.npmjs.org/@playwright%2fmcp cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/@playwright%2fmcp 112ms (cache miss)
+21 silly packumentCache full:https://registry.npmjs.org/@playwright%2fmcp set size:undefined disposed:false
+22 silly placeDep ROOT @playwright/mcp@0.0.77 OK for:  want: 0.0.77
+23 silly fetch manifest playwright@1.62.0-alpha-2026-06-29
+24 silly packumentCache full:https://registry.npmjs.org/playwright cache-miss
+25 silly fetch manifest playwright-core@1.62.0-alpha-2026-06-29
+26 silly packumentCache full:https://registry.npmjs.org/playwright-core cache-miss
+27 http fetch GET 200 https://registry.npmjs.org/playwright 857ms (cache miss)
+28 silly packumentCache full:https://registry.npmjs.org/playwright set size:undefined disposed:false
+29 http fetch GET 200 https://registry.npmjs.org/playwright-core 1202ms (cache miss)
+30 silly packumentCache full:https://registry.npmjs.org/playwright-core set size:undefined disposed:false
+31 silly placeDep ROOT playwright@1.62.0-alpha-2026-06-29 OK for: @playwright/mcp@0.0.77 want: 1.62.0-alpha-2026-06-29
+32 silly placeDep ROOT playwright-core@1.62.0-alpha-2026-06-29 OK for: @playwright/mcp@0.0.77 want: 1.62.0-alpha-2026-06-29
+33 silly fetch manifest fsevents@2.3.2
+34 silly packumentCache full:https://registry.npmjs.org/fsevents cache-miss
+35 http fetch GET 200 https://registry.npmjs.org/fsevents 48ms (cache miss)
+36 silly packumentCache full:https://registry.npmjs.org/fsevents set size:undefined disposed:false
+37 silly placeDep ROOT fsevents@2.3.2 OK for: playwright@1.62.0-alpha-2026-06-29 want: 2.3.2
+38 silly reify moves {}
+39 silly audit bulk request {
+39 silly audit   '@playwright/mcp': [ '0.0.77' ],
+39 silly audit   playwright: [ '1.62.0-alpha-2026-06-29' ],
+39 silly audit   'playwright-core': [ '1.62.0-alpha-2026-06-29' ],
+39 silly audit   fsevents: [ '2.3.2' ]
+39 silly audit }
+40 verbose reify failed optional dependency /home/vijendhar/automation/AIAGENTMCP/.cache/npm/_npx/9833c18b2d85bc59/node_modules/fsevents
+41 silly reify mark deleted [
+41 silly reify   '/home/vijendhar/automation/AIAGENTMCP/.cache/npm/_npx/9833c18b2d85bc59/node_modules/fsevents'
+41 silly reify ]
+42 silly tarball no local data for playwright@https://registry.npmjs.org/playwright/-/playwright-1.62.0-alpha-2026-06-29.tgz. Extracting by manifest.
+43 silly tarball no local data for playwright-core@https://registry.npmjs.org/playwright-core/-/playwright-core-1.62.0-alpha-2026-06-29.tgz. Extracting by manifest.
+44 silly tarball no local data for @playwright/mcp@https://registry.npmjs.org/@playwright/mcp/-/mcp-0.0.77.tgz. Extracting by manifest.
+45 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 273ms
+46 silly audit report {}
+47 http fetch GET 200 https://registry.npmjs.org/@playwright/mcp/-/mcp-0.0.77.tgz 397ms (cache miss)
+48 http fetch GET 200 https://registry.npmjs.org/playwright/-/playwright-1.62.0-alpha-2026-06-29.tgz 438ms (cache miss)
+49 http fetch GET 200 https://registry.npmjs.org/playwright-core/-/playwright-core-1.62.0-alpha-2026-06-29.tgz 642ms (cache miss)
